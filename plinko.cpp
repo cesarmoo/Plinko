@@ -36,7 +36,7 @@ void run_experiment(int numColumns, int numRows,
       // if at left wall, go right
       if (currColumn == 1) {
         ++currColumn;
-      }
+        }
 
       // if at right wall, go left
       else if (currColumn == numColumns) {
@@ -67,7 +67,7 @@ void print_bucket_contents(const vector<int> &buckets, int numTrials) {
 
   cout << "\n\nBucket probabilities:\n";
   for (int b = 0; b < (int)buckets.size(); ++b) {
-    cout << (buckets[b] / numTrials) << " ";
+    cout << (buckets[b] / (double)numTrials) << " ";
   }
   cout << endl;
 }
